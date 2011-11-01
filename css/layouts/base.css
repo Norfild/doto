@@ -1,0 +1,190 @@
+/* @charset "utf-8"; */
+
+/** 
+ *   AUTO.ria.ua index.css
+ *   Version : 0.9.1
+ *   date modification 10.01.2011 ( rows 1091 )
+ *   ----------------------------------
+ *   
+ *   
+ *   2.  Base element constructor
+ *   3.  All type heads
+ *       3.1 head ( elemnt, h1, h3 )
+ *       3.2 head-page
+ *       3.3 heading
+ *       3.4 title ( elemnt, h3 )
+ *       3.5 head-bookmark
+ *       3.6 head-line
+ *       3.7 head-panel
+ *   
+ *   4.  style all FORMAT PHOTO
+ *       4.1 photo-85x56
+ *       4.2 photo-135x90
+ *       4.3 photo-185x120
+ *       4.4 photo-295x195
+ *       4.5 photo-380x250
+ *   
+ *   5.  Pager
+ *   6.  Navigator
+ *   7.  Rotator
+ *   8.  Element OPTIONS
+ *   9.  Vertical menu (element dl)
+ *   10. Unordered-list
+ *       10.1 ul.unordered-list
+ *       10.2 ol.unordered-list
+ *       10.3 dl.unordered-list
+ *   
+ *   11. Insert pseudo-element
+ *       11.1 Sold, New-news
+ *       11.2 Insert icons NEW, em.new
+ *   
+ *   12. Remarka
+ *   13. Pou-up alert
+ *       13.1 pop-up alert succes
+ *       13.2 pop-up alert error
+ *
+ */
+
+
+
+section{
+    padding: 60px 0;
+    }
+
+h1.head{
+    padding-bottom: 5px;
+    border-bottom:  1px solid #ddd;
+    margin-bottom:  18px;
+    }
+
+
+
+
+
+/*
+ *     text column
+ * */
+
+
+.textcolumn{
+    -moz-column-gap:     20px;
+    -moz-column-rule:    1px solid #ddd;
+    -webkit-column-gap:  20px;
+    -webkit-column-rule: 1px solid #ddd;
+    }
+
+.textcolumn.count-2{ -moz-column-count: 2; -webkit-column-count: 2; }
+.textcolumn.count-3{ -moz-column-count: 3; -webkit-column-count: 3; }
+.textcolumn.count-4{ -moz-column-count: 4; -webkit-column-count: 4; }
+.textcolumn.count-5{ -moz-column-count: 5; -webkit-column-count: 5; }
+
+
+
+/**
+ *    2. Base element constructor
+ * */
+
+
+a{ color: #256799; }
+
+
+.green { color: #527b02; }
+.blue  { color: #256799; }
+.red   { color: #d85442; }
+
+.delete{ color: #d85442; }
+.date  { color: #6b6b6b; }
+.grey  { color: #707070; }
+
+
+
+
+
+
+.navigator{
+    display: inline-block;
+    width: 100%;
+    font: normal 15px/30px Arial, Helvetica, sans-serif;
+    color: #345a9b;
+    cursor: default;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background: #efeee8;
+       -moz-border-radius:    7px;
+       -o-border-radius:      7px;
+       -webkit-border-radius: 7px;
+       -khtml-border-radius:  7px;
+    }
+    .navigator .next{
+        float: right;
+        margin-right: 10px;
+        }
+    .navigator .prev{
+        float: left ;
+        margin-left: 10px;
+        }
+        .navigator span.disabled, 
+        .navigator .disabled a{
+            color: #707070;
+            text-decoration: none;
+            cursor: default;
+            }
+    .navigator .lock, 
+    .navigator .lock a{
+        color: #757575;
+        }
+    .navigator .page{
+        text-align: center;
+        margin: 0 120px;
+        }
+        .navigator .page a{
+            margin: 0 3px;
+            }
+
+
+
+
+
+/**
+ *  -------------------------  8. Element OPTIONS  -------------------------
+ * */
+
+.options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 18px 0 0 -5px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #b0b3b4;
+    font: normal normal 13px/18px Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    width: auto;
+    z-index: 2000;
+  * zoom: 1;
+    box-shadow: 5px 5px 5px -4px #525252;
+        -moz-box-shadow: 5px 5px 5px -4px #525252;
+        -webkit-box-shadow: 5px 5px 5px -4px #525252;
+    }
+
+    .options a{
+        display: block;
+        color: #414042;
+        text-decoration: none;
+        font-weight: normal;
+        white-space: nowrap;
+        padding: 1px 15px 1px 6px;
+        }
+    .options a:hover, 
+    .options a.select{
+        color: #fff;
+        background: #3399fe;
+        }
+
+
+
+
+
+

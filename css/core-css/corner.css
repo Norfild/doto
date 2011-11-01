@@ -1,0 +1,93 @@
+/* @charset "utf-8"; */
+
+/** 
+ *   Round.css
+ *   Version : 0.6.4
+ *   date modification 7.07.2010, 18:00 
+ *   ----------------------------------
+
+ *   1. corner radius 2px - 10px
+ *
+ */
+
+
+
+
+
+
+
+/**
+ *    1. Corner radius 2px - 10px
+ */
+
+.corner-2{
+    border-radius:        2px;
+   -moz-border-radius:    2px;
+   -o-border-radius:      2px;
+   -webkit-border-radius: 2px;
+   -khtml-border-radius:  2px;
+}
+
+.corner-3{
+    border-radius:        3px;
+   -moz-border-radius:    3px;
+   -o-border-radius:      3px;
+   -webkit-border-radius: 3px;
+   -khtml-border-radius:  3px;
+}
+
+.corner-4{
+    border-radius:        4px;
+   -moz-border-radius:    4px;
+   -o-border-radius:      4px;
+   -webkit-border-radius: 4px;
+   -khtml-border-radius:  4px;
+}
+
+.corner-5{
+    border-radius:        5px;
+   -moz-border-radius:    5px;
+   -o-border-radius:      5px;
+   -webkit-border-radius: 5px;
+   -khtml-border-radius:  5px;
+}
+
+.corner-6{
+    border-radius:        6px;
+   -moz-border-radius:    6px;
+   -o-border-radius:      6px;
+   -webkit-border-radius: 6px;
+   -khtml-border-radius:  6px;
+}
+
+.corner-7{
+    border-radius:        7px;
+   -moz-border-radius:    7px;
+   -o-border-radius:      7px;
+   -webkit-border-radius: 7px;
+   -khtml-border-radius:  7px;
+}
+
+.corner-8{
+    border-radius:        8px;
+   -moz-border-radius:    8px;
+   -o-border-radius:      8px;
+   -webkit-border-radius: 8px;
+   -khtml-border-radius:  8px;
+}
+
+.corner-9{
+    border-radius:        9px;
+   -moz-border-radius:    9px;
+   -o-border-radius:      9px;
+   -webkit-border-radius: 9px;
+   -khtml-border-radius:  9px;
+}
+
+.corner-10{
+    border-radius:        10px;
+   -moz-border-radius:    10px;
+   -o-border-radius:      10px;
+   -webkit-border-radius: 10px;
+   -khtml-border-radius:  10px;
+}

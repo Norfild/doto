@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Layouts</title>
+        
+        <link href="css/init.css" type="text/css" rel="stylesheet" />
+        <!--[if lte IE 7]>
+            <link href="css/core-css/ie.css" type="text/css" rel="stylesheet" />
+            <link href="css/ie.css" type="text/css" rel="stylesheet" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link href="css/ie6.css" type="text/css" rel="stylesheet" />
+        <![endif]-->
+        <link type="text/css" rel="stylesheet" media="print" href="css/core-css/print.css" />
+        <script src="js/init.js"></script>
+    </head>
+    <body>
+
+        <div class="container-body">
+            
+            <div class="header">
+                <div class="menu">
+                    <a href="overview.html">Overview DoTo</a>
+                    <a href="about.html">About</a>
+                    <a href="grid.html">Grid</a>
+                    <a href="layouts.html">Layouts</a>
+                    <a href="typography.html">Typography</a>
+                    <a href="tables.html" class="active">Tables</a>
+                    <a href="forms.html">Forms</a>
+                    <a href="navigation.html">Navigation</a>
+                    <a href="alerts.html">Alerts</a>
+                    <a href="popovers.html">Popovers</a>
+                    
+                    <a href="javascript: showGrid('show_grid')">Show Grid</a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="container-main" id="show_grid">
+            
+<!--
+
+-------------   SECTIONS ALERTS   ------------
+
+-->
+                        
+                        <section id="alerts">
+                            
+                            <h1 class="head">
+                                Tables <small>For, you guessed it, tabular data</small>
+                            </h1>
+                            
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <h2>Building tables</h2>
+                                    <p>
+                                        <code>&lt;table&gt;</code>
+                                        <code>&lt;thead&gt;</code>
+                                        <code>&lt;tbody&gt;</code>
+                                        <code>&lt;tr&gt;</code>
+                                        <code>&lt;th&gt;</code>
+                                        <code>&lt;td&gt;</code>
+                                        <code>&lt;colspan&gt;</code>
+                                        <code>&lt;caption&gt;</code>
+                                    </p>
+                                    <p>
+                                        Tables are great—for a lot of things. Great tables, 
+                                        however, need a bit of markup love to be useful, scalable, 
+                                        and readable (at the code level). Here are a few tips to help.
+                                    </p>
+                                </div>
+                                
+                                <div class="offset4">
+                                    <h3>
+                                        Example: Default table styles
+                                    </h3>
+                                    <p>
+                                        All tables will be automatically styled with only the essential 
+                                        borders to ensure readability and maintain structure. 
+                                        No need to add extra classes or attributes.
+                                    </p>
+                                    
+                                    
+                                    
+                                    <table>
+                                        
+                                        <caption>Default table</caption>
+                                        
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Language</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Some</td>
+                                                <td>One</td>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Joe</td>
+                                                <td>Sixpack</td>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Stu</td>
+                                                <td>Dent</td>
+                                                <td>Code</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+<pre class="prettyprint">
+&lt;table&gt;
+  ... 
+&lt;/table&gt;
+</pre>
+                                    
+                                    
+                                    <table class="grid">
+                                        
+                                        <caption>Example: Grid table styles</caption>
+                                        
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Language</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Some</td>
+                                                <td>One</td>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Joe</td>
+                                                <td>Sixpack</td>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Stu</td>
+                                                <td>Dent</td>
+                                                <td>Code</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+<pre class="prettyprint">
+&lt;table <em>class</em>="<i>grid</i>"&gt;
+  ... 
+&lt;/table&gt;
+</pre>
+                                    
+                                    
+                                    <table class="grid zebra">
+                                        
+                                        <caption>Example: Grid table styles</caption>
+                                        
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Language</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Some</td>
+                                                <td>One</td>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Joe</td>
+                                                <td>Sixpack</td>
+                                                <td>English</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Stu</td>
+                                                <td>Dent</td>
+                                                <td>Code</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+<pre class="prettyprint">
+&lt;table <em>class</em>="<i>grid zebra</i>"&gt;
+  ... 
+&lt;/table&gt;
+</pre>
+                                
+                                
+                                </div>
+                            </div>
+                            
+                        </section>
+                        
+                        
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="wrapper">
+                RIA CSS Framework v2.0 <sup>dev</sup>
+            </div>
+        </div>
+        
+    </body>
+</html>

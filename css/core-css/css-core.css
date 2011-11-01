@@ -1,0 +1,811 @@
+/* @charset "utf-8"; */
+
+
+
+/**
+ *    Framework CSS-snippets
+ *    Version : 2.0.0
+ *    Date modification 15.02.2011 
+ *    ------------------------------
+ *     1. Props to Eric Meyer (meyerweb.com) for his CSS reset file.
+ *        We're using an adapted version here that cuts out some of
+ *        the reset HTML elements we will never need here (i.e., dfn, samp, etc).
+ *     2. Remember to highlight inserts somehow
+ *     3. Style Tabel
+ *     4. Style h1-h6
+ *     5. Size text
+ *     6. Default style link
+ *     7. Unordered List
+ *     8. Ordered List
+ *     9. Definition List
+ *    10. Class align text
+ *    11. Style text color
+ *    12. Style Alert
+*/
+
+
+
+
+/**
+ * ------------------------- Reset CSS -------------------------
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    }
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, 
+dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, 
+fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:      0;
+    padding:     0;
+    border:      0 none;
+    font-weight: normal;
+    font-style:  normal;
+    font-size:   100%;
+    font-family: inherit;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing:  0;
+    }
+
+ol, ul {
+    list-style: none;
+    }
+
+q:before, blockquote:before,
+q:after,  blockquote:after {
+    content: "";
+    }
+
+html {
+    overflow-y: scroll;
+    font-size: 100%;
+       -webkit-text-size-adjust: 100%;
+       -ms-text-size-adjust:     100%;
+    }
+
+a:focus {
+    outline: thin dotted;
+    }
+
+a:hover, a:active {
+    outline: 0;
+    }
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+nav, 
+section {
+    display: block;
+    }
+
+audio, canvas, video {
+    display: inline-block;
+    }
+
+audio:not([controls]) { display:none; }
+
+sub, sup {
+    font-size:      75%;
+    line-height:    0;
+    position:       relative;
+    vertical-align: baseline;
+    }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img {
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+    }
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin:    0;
+    vertical-align: baseline;
+    }
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    }
+
+
+/**
+ * ------------------------- remember to highlight inserts somehow -------------------------
+ */
+
+body{
+    font: normal 12px/18px Arial, Helvetica, sans-serif;
+    color:#414042;
+    }
+
+a img { border: 0 none; }
+
+.clear{
+    clear: both;
+    }
+.clr{
+    clear: both;
+    margin: 0;
+    padding: 0;
+    }
+.clearfix:after {
+    display:     table;
+    font-size:   0; line-height: 0;
+    opacity:     0; height:      0;
+    overflow:    hidden;
+    content:     "";
+    clear:       both;
+    }
+
+
+/**
+ * ------------------------- Base typography style -------------------------
+ * */
+
+q{ quotes: "\00ab" "\00bb"; }
+
+strong{
+    font-style: inherit;
+    font-weight: bold;
+    }
+cite, em, dfn {
+    font-style: italic;
+    }
+code, kbd, samp, pre, tt, var{
+    font-size: 12px;
+    font-family:   Monaco, Andale Mono, Courier New, monospace;
+    }
+del {
+    text-decoration: line-through;
+    color: #666;
+    }
+ins{
+    border-bottom: 1px solid #2d2d2d;
+    }
+ins {
+    text-decoration: none
+}
+small, sup, sub {
+    font-size: 11px;
+    }
+acronym {
+    text-transform: uppercase;
+    }
+a abbr, a acronym {
+    border: 0 none;
+    }
+abbr[title], acronym[title], dfn[title] {
+    cursor: help;
+    }
+abbr[title]{
+    border-bottom: 1px dotted #256799;
+    }
+sup { vertical-align: super; }
+sub { vertical-align: sub;   }
+
+code, pre {
+    font-weight:   normal;
+    padding:       0 3px 2px;
+    border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius:    3px;
+    }
+
+code {
+    background-color: #fee9cc;
+    color:     rgba(0, 0, 0, 0.75);
+    padding:   1px 3px;
+    }
+
+pre {
+    background-color: #f5f5f5;
+    display:     block;
+    padding:     17px;
+    margin:      0 0 18px;
+    font-size:   12px;
+    line-height: 18px;
+    border:      1px solid #ccc;
+    border:      1px solid rgba(0, 0, 0, 0.15);
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap:   break-word;
+    }
+    
+    pre:before{}
+    
+    pre em{
+        color: #cb4b16;
+        font-style: normal;
+        }
+        
+    pre i{
+        color: #268bd2;
+        font-style: normal;
+        }
+        
+    pre.prettyprint {
+        background: #fefbf3;
+        padding:    9px;
+        color:      #195f91;
+        border:     1px solid rgba(0,0,0, 0.2);
+        box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+           -webkit-box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+           -moz-box-shadow:    0 1px 2px rgba(0,0,0, 0.1);
+        }
+
+    pre.linenums{
+        position: relative;
+        overflow: hidden;
+        padding-left: 40px;
+        }
+        pre.linenums:before{
+            position:   absolute;
+            left:       5px;
+            width:      30px;
+            padding:    0 0 10px 0;
+            text-align: right;
+            color:      #ddd; 
+            content:    '1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. .18. 19 .20. 21. 22. 23. 24. 25. 26. 27. 28. 29. .30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40.';
+            z-index:    100;
+            }
+        pre.linenums:after{
+            position:   absolute;
+            bottom:     0;
+            left:       5px;
+            width:      35px;
+            height:     10px;
+            background: #fefbf3;
+            content:    '';
+            z-index:    101;
+            }
+
+blockquote{
+    border: 1px solid #ccc;
+    border-left:  none;
+    border-right: none;
+    color: #888;
+    padding: 0 25px 10px 25px;
+    }
+
+    blockquote p {
+        margin-bottom: 0;
+        }
+
+    blockquote small {
+        display: block;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        color: #bfbfbf;
+        }
+        
+    blockquote small:before {
+        content: '\2014 \00A0';
+        }
+
+
+address{
+    display:       block;
+    line-height:   18px;
+    margin-bottom: 18px;
+    }
+
+/**
+ *  ------------------------- Style h1-h6 -------------------------
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    line-height: 36px;
+    }
+
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 13px; }
+
+h6 {
+    text-transform: uppercase;
+    opacity:        0.65;
+    }
+
+    h1 small,
+    h2 small,
+    h3 small,
+    h4 small,
+    h5 small,
+    h6 small {
+        font-weight: normal;
+        font-size:   0.65em;
+        opacity:     0.65;
+        }
+
+
+
+/**
+ * ------------------------- default style link -------------------------
+ */
+
+a{
+    text-decoration: none;
+    }
+    a:hover{ text-decoration: underline; }
+    a:link {  } 
+    a:visited {
+        opacity: 0.75;
+        }
+    a:active {  }
+    
+    a:link:after, 
+    a:visited:after{}
+    
+    a:focus {
+        text-decoration: none;
+        outline: none;
+        }
+
+p { margin: 12px 0; }
+
+
+ol, ul{
+    margin:0 0 18px 25px
+    }
+
+/** ------------------------- Unordered List ------------------------- */
+
+ul { 
+    list-style-type: disc;
+    }
+    ul ul {
+        list-style-type: square;
+        }
+
+
+/** ------------------------- Ordered List ------------------------- */
+ol {
+    list-style: decimal;
+    }
+    ol ol {
+        list-style-type: lower-latin;
+        }
+
+
+/** ------------------------- Definition List ------------------------- */
+dl {
+    margin-bottom: 18px;;
+    }
+    dt {
+        font-weight:   bold;
+        margin-bottom: 6px;
+        }
+    dd {
+        margin-left:   12px;
+        margin-bottom: 6px;
+        }
+
+
+
+        ol ol, ol ul, 
+        ul ul, ul ol{
+            margin-left: 25px;
+            margin-top:  5px;
+            }
+
+        ul.alpha, 
+        ol.alpha{
+            list-style: lower-alpha;
+            }
+
+        ul.unstyled{
+            list-style:  none;
+            margin-left: 0;
+            }
+
+        ol.linenums{
+            margin: 0 0 0 40px;
+            }
+
+            .linenums li{
+                color: rgba(0,0,0,.15);
+                line-height: 20px;
+                }
+
+
+
+/** ------------------------- Unordered-list ------------------------- */
+
+
+ul.unordered-list, 
+ol.unordered-list, 
+dl.unordered-list, 
+.unordered-list dt, 
+.unordered-list dd, 
+.unordered-list li{
+    padding:    0;
+    margin:     0;
+    list-style: none;
+    }
+dl.unordered-list{
+    margin-bottom: 15px;
+    }
+
+    .unordered-list dd, 
+    .unordered-list li{
+        margin-left: 10px;
+        }
+
+    .unordered-list dd:before, 
+    .unordered-list li:before{
+        position:    relative;
+        float:  left;
+        width:       3px;
+        height:      3px;
+        font-size:   0;
+        line-height: 0;
+        margin:      8px 0 0 -8px;
+        background:  #414141;
+        content:     "";
+    }
+
+    .unordered-list li{
+        margin-left: 10px;
+        }
+
+        .unordered-list ul li:before{
+            width:      15px;
+            height:     1px;
+            margin:     8px 0 0 -20px;
+            background: #414141;
+            }
+
+         ul .unordered-list{
+             margin: 5px 0 18px 15px;
+             }
+
+
+
+hr{
+    font:          normal 1px/1px Arial, Helvetica, sans-serif;
+    background:    #ddd;
+    color:         #ddd;
+    border:        0 none;
+    height:        1px;
+    margin:        15px 0;
+    border-bottom: 1px solid #fff;
+    line-height:   1px;
+    font-size:     1px;
+    }
+
+@-moz-document url-prefix(){
+    hr{ height: 2px; }
+    }
+
+
+/**
+ * ------------------------- style Tabel -------------------------
+ */
+
+table, th, td{
+    border: 0 none;
+    }
+table {
+    width:         100%;
+    margin-bottom: 18px;
+    line-height:   18px;
+    border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius:    5px;
+    }
+
+th, td{
+    padding: 8px 10px;
+    font-weight: normal;
+    }
+
+table, td, th { vertical-align: top; }
+th , thead td { font-weight: bold; }
+
+table th, 
+table td{
+    border-top: 1px solid #ddd;
+    }
+
+thead th, 
+thead td{
+    border-top: 0 none;
+    border-bottom: 2px solid #ddd;
+    }
+
+caption{
+    font-weight:    bold;
+    line-height:    21px;
+    font-size:      12px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align:     left;
+    opacity:        0.65;
+    }
+
+table th + th, 
+table td + td {
+    border-left: 1px solid #ddd;
+    }
+
+table tr + tr td {
+    border-top: 1px solid #ddd;
+    }
+
+    table tbody tr:first-child td:first-child {
+        border-radius:            5px 0 0 0;
+           -webkit-border-radius: 5px 0 0 0;
+           -moz-border-radius:    5px 0 0 0;
+        }
+    table tbody tr:first-child td:last-child {
+        border-radius:            0 5px 0 0;
+           -webkit-border-radius: 0 5px 0 0;
+           -moz-border-radius:    0 5px 0 0;
+        }
+    table tbody tr:last-child td:last-child {
+        border-radius:            0 0 5px 0;
+           -webkit-border-radius: 0 0 5px 0;
+           -moz-border-radius:    0 0 5px 0;
+        }
+    table tbody tr:last-child td:first-child {
+        border-radius:            0 0 0 5px;
+           -webkit-border-radius: 0 0 0 5px;
+           -moz-border-radius:    0 0 0 5px;
+        }
+
+
+    /*
+     *     table grid
+     * */
+
+    table.grid{
+        border-collapse: separate;
+        border:          1px solid #ddd;
+        }
+        
+        table.grid td, 
+        table.grid th{
+            border-bottom: 0 none;
+            border-top:    1px solid #ddd;
+            }
+            
+        table.grid tbody tr:first-child td, 
+        table.grid tbody tr:first-child th{
+            border-top: 0 none;
+            }
+            
+        table.grid thead td, 
+        table.grid thead th{
+            border-top:    0 none;
+            border-bottom: 2px solid #ddd;
+            }
+        
+    
+    
+    table.zebra tr:nth-child(2n) td{
+        background: #f9f9f9;
+        }
+/**
+ * Show table grid
+ * */
+
+
+
+
+
+
+
+
+
+
+/*
+.container-html{
+    position: relative;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    }
+
+
+.footer{
+    position: relative;
+    margin: 0 auto;
+   
+    
+     ---------------- 
+    margin-top: -Xpx;
+    height: Xpx;
+    background: color;
+       ---------------- 
+    
+    }
+*/
+
+.float-l { float: left; }
+.float-r { float: right; }
+.float-n { float: none !important; }
+.float-i { float: inherit !important; }
+
+
+
+/**
+ *  ------------------------- size text -------------------------
+ */
+
+.size8  { font-size: 8px;  }
+.size9  { font-size: 9px;  }
+.size10 { font-size: 10px; }
+.size11 { font-size: 11px; }
+.size12 { font-size: 12px; }
+.size13 { font-size: 13px; }
+.size14 { font-size: 14px; }
+.size15 { font-size: 15px; }
+.size16 { font-size: 16px; }
+.size17 { font-size: 17px; }
+.size18 { font-size: 18px; }
+
+/**
+ *  ------------------------- align text -------------------------
+ */
+
+.text-l { text-align: left;    }
+.text-c { text-align: center;  }
+.text-j { text-align: justify; }
+.text-r { text-align: right;   }
+
+
+
+/**
+ *  ------------------------- @text color -------------------------
+ */
+
+.white  { color: #fff   ; }
+.black  { color: #000   ; }
+.red    { color: #db1919; }
+.blue   { color: #256799; }
+.green  { color: #527b02; }
+.yellow { color: #ffc40d; }
+.orange { color: #f89406; }
+.purple { color: #7a43b6; }
+
+
+.bold, .strong       { font-weight: bold; }
+.nowrap              { white-space: nowrap; }
+.hide                { display:     none !important; }
+.count               { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+.no-bold             { font-weight: normal !important; }
+.unstyle             { list-style:  none; }
+
+a.unlink, 
+a.unlink:hover      { text-decoration: none !important; }
+
+
+.boxed{
+    display: inline-block;
+    width: 100%;
+    }
+
+.paragraph {
+    text-indent: 24px;
+    }
+
+
+p img.left  { float: left;  margin: 18px 18px 18px 0; padding: 0; }
+p img.right { float: right; margin: 18px 0 18px 18px; padding: 0; }
+
+ul.unstyle, 
+ol.unstyle{
+    margin:     0; 
+    padding:    0;
+    list-style: none;
+    }
+
+
+
+/**
+ * ------------------------- @alert -------------------------
+ */
+
+
+
+.warning  { background: #fdf5d9;
+            color:      #514721;
+          }
+
+.error    { background: #fddfde;
+            color:      #8a1f11;
+          }
+
+.info     { background: #ddf4fb;
+            color:      #514721;
+          }
+ 
+.succes  { background: #d1eed1;
+            color:     #264409;
+          }
+
+.warning, .error, .info, .succes{
+    display:       inline-block;
+    padding:       14px;
+    margin:        0 0 15px;
+    text-shadow:   0 1px 0 rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+       -moz-border-radius:    5px;
+       -o-border-radius:      5px;
+       -webkit-border-radius: 5px;
+       -khtml-border-radius:  5px;
+       -ms-border-radius:     5px;
+    }
+
+.warning, .error, .info, .succes{
+    display: block;
+    }
+
+.warning hr, 
+ .succes hr, 
+  .error hr, 
+   .info hr{
+    margin: 10px 0;
+    border-bottom-color: rgba(255, 255, 255, 0.75)
+    }
+
+    .warning hr  { background: #fceec1; }
+     .succes hr  { background: #bfe7bf; }
+      .error hr  { background: #fbc2c4; }
+       .info hr  { background: #c6edf9; }
+
+.warning .close,
+ .succes .close,
+  .error .close, 
+   .info .close{
+    float:       right;
+    padding:     5px;
+    margin:     -7px -5px 0 0;
+    font-size:   20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+    opacity: 0.2;
+    }
+    
+    .warning .close:hover,
+     .succes .close:hover,
+      .error .close:hover, 
+       .info .close:hover{
+        opacity: 0.5;
+        text-decoration: none;
+        }
+
+.warning p, 
+ .succes p, 
+  .error p, 
+   .info p{
+    margin-top: 0;
+    }

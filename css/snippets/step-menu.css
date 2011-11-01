@@ -1,0 +1,130 @@
+/* @charset "utf-8"; */
+
+
+
+/* MENU STEP */
+
+ul.box-step-menu, 
+ul.box-step-menu li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    }
+ul.box-step-menu{ width: 100%; }
+ul.box-step-menu li{ float: left; }
+
+ul.box-step-menu.box-step-2 li{ width: 50%; }
+
+ul.box-step-menu.box-step-3 li{ width: 34%; }
+    ul.box-step-menu.box-step-3 li.first, 
+    ul.box-step-menu.box-step-3 li.last{ width: 33%; }
+    
+ul.box-step-menu.box-step-4 li{ width: 25%; }
+ul.box-step-menu.box-step-5 li{ width: 20%; }
+
+    ul.box-step-menu li i{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        }
+
+ul.box-step-menu li a, 
+ul.box-step-menu li a span, 
+ul.box-step-menu li a strong{
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    font: normal normal 16px/36px Arial, Helvetica, sans-serif;
+    background: url('http://img.auto.ria.ua/images/snippets/step-menu.gif');
+    color: #858585;
+    cursor: pointer;
+    }
+ul.box-step-menu li a span, 
+ul.box-step-menu li a strong{
+    position: relative;
+    background-repeat: no-repeat;
+    }
+ul.box-step-menu li a{
+    text-decoration: none;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    }
+ul.box-step-menu li a span{
+    background-position: 100% -76px;
+    }
+ul.box-step-menu li a strong{
+    position: relative;
+    left: -17px;
+    margin-right: -10px;
+    padding-left: 10px;
+    background-position: 0 -38px;
+    }
+ul.box-step-menu li.first a strong{
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-position: 0 -152px;
+    }
+ul.box-step-menu li.last a span{
+    background-position: 100% -114px;
+    }
+
+/* -- if tabs active -- */
+
+ul.box-step-menu li a:hover, 
+ul.box-step-menu li a:hover span, 
+ul.box-step-menu li a:hover strong, 
+ul.box-step-menu li a.active, 
+ul.box-step-menu li a.active span, 
+ul.box-step-menu li a.active strong{ color: #fff; }
+ul.box-step-menu li a:hover, 
+ul.box-step-menu li a.active{
+    background-position: 0 -190px;
+    }
+ul.box-step-menu li a:hover span, 
+ul.box-step-menu li a.active span{
+    background-position: 100% -266px;
+    }
+ul.box-step-menu li a:hover strong, 
+ul.box-step-menu li a.active strong{
+    background-position: 0 -228px;			
+    }
+ul.box-step-menu li.first a:hover strong, 
+ul.box-step-menu li.first a.active strong{
+    background-position: 0 -342px;			
+    }
+ul.box-step-menu li.last a:hover span, 
+ul.box-step-menu li.last a.active span{
+    background-position: 100% -304px;
+    }
+
+/* -- if tabs lock -- */
+
+ul.box-step-menu li a.lock, 
+ul.box-step-menu li a.lock span, 
+ul.box-step-menu li a.lock strong,  
+ul.box-step-menu li a.lock:hover, 
+ul.box-step-menu li a.lock:hover span, 
+ul.box-step-menu li a.lock:hover strong{
+    color: #adadad;
+    background-position: 0 0;
+    cursor: default;
+    }
+ul.box-step-menu li a.lock span, 
+ul.box-step-menu li a.lock:hover span{
+    background-position: 100% -76px;
+    }
+ul.box-step-menu li a.lock strong, 
+ul.box-step-menu li a.lock:hover strong{
+    background-position: 0 -38px;
+    }
+ul.box-step-menu li.first a.lock strong, 
+ul.box-step-menu li.first a.lock:hover strong{
+    background-position: 0 -152px;
+    }
+ul.box-step-menu li.last a.lock span, 
+ul.box-step-menu li.last a.lock:hover span{
+    background-position: 100% -114px;
+    }

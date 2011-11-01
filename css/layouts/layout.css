@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/** 
+ *   base layout.css
+ *   Version : 1.0.0
+ *   date modification 26.05.2011
+ *   ----------------------------------
+ *   1.  Base style body grid
+ *       1.1 
+ *   
+ */
+
+
+
+/**
+ *     1. Base style body grid
+ * */
+
+
+html, body {
+    height: 100%;
+   /*
+    * overflow: auto;
+    */
+    min-width:  800px;
+    background: #444 url('../../images/pattern/pattern.png') fixed repeat;
+    }
+
+body{
+    font:  normal 13px/18px Arial, Helvetica, sans-serif;
+    color: #525252;
+    }
+
+.container-body{
+    width:      940px;
+    min-height: 100%;
+    
+    
+    
+   /* 
+    * For IE
+    * 
+    * height: auto !important;
+    * height: 100%;
+      margin-left: 200px;
+    */
+    background: #fff;
+    padding:    0 25px;
+    margin:     0 auto;
+    
+    
+    }
+
+
+/** 
+ *   header.css
+ */
+
+
+.header{
+    position:      fixed;
+    width:         100%;
+    left: 0;       top:  0;
+    color:         #fff;
+    
+    background:    rgba(40,40,40, 0.85) url('../../images/roll.png') 0 100% repeat-x;
+    
+    border:        0 none;
+    border-bottom: 1px solid #222;
+    
+    z-index: 1000;
+    }
+    
+    .header .menu{
+        width:  960px;
+        margin: 0 auto;
+        }
+    
+    .header a{
+        float:   left;
+        padding: 5px 10px 10px;
+        color:   #fff;
+        opacity: 0.75;
+        }
+
+        .header a:hover{
+            text-decoration: none;
+            opacity: 1;
+            }
+
+    .header a.active{
+        font-weight:    bold;
+        background:     rgba(40,40,40, 0.75);
+        margin-bottom: -1px;
+        padding:        5px 8px 8px;
+        border-bottom:  3px solid #7db72f;
+        opacity:        1;
+        }
+
+.container-main{
+    display: inline-block;
+    width:   100%;
+    margin:  0 0 35px 0;
+    padding: 0;
+    }
+    
+
+
+
+
+
+/** 
+ *   footer.css
+ */
+
+
+.footer{
+    margin: -24px 0 0;
+    height:  24px;
+    background: #fff;
+    opacity: 0.75;
+    }
+    
+    .footer .wrapper{
+        padding:    2px 10px;
+        text-align: center;
+        font-size:  11px;
+        line-height:20px;
+        }
+        
+        .footer sup{
+            display:     none;
+            position:    relative;
+            font-size:   9px;
+            line-height: 9px;
+            font-family: fantasy;
+            }

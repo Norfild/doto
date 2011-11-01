@@ -1,0 +1,196 @@
+/** 
+ *   breadcrumbs.css [snippet]
+ *   Version : 1.0.0
+ *   date modification 22.12.2010
+ *   ----------------------------------
+ */
+
+
+
+.breadcrumbs{
+    margin: -5px 0 10px;
+    display: inline-block;
+    width: 100%;
+}
+h2.breadcrumbs{
+    font: normal 13px/18px Arial, Helvetica, sans-serif;
+    }
+
+    .breadcrumbs em.darr{
+        position: absolute;
+        width: 15px;
+        height: 8px;
+        z-index: 2;
+        top: -2px;
+        left: 37px;
+        background: url('http://img.auto.ria.ua/img/common/arrow.gif') 0 -107px no-repeat;
+    }
+    .breadcrumbs h2{
+        display: block;
+        width: 100%;
+        height: 1px !important;
+        height: auto;
+        overflow: hidden !important;
+        overflow: visible;
+        margin: -1px 0 0 0;
+        padding: 0;
+    }
+    
+    
+        .breadcrumbs .item{
+            position: relative;
+            float: left;
+        }
+        .breadcrumbs .item a{
+            display: inline-block;
+            padding-right: 20px;
+            padding-bottom: 9px;
+            margin-bottom: -10px;
+            background: url('http://img.auto.ria.ua/img/ria2/icons/arrow.gif') 100% 4px no-repeat;
+        }
+        .breadcrumbs .item a.select, 
+        .breadcrumbs .item a.select:hover{
+            text-decoration: none;
+            }
+        .breadcrumbs .item ol li a{
+            display: block;
+            padding: 3px 2px 3px 5px;
+            margin: 0;
+            background: none;
+            border-radius: 2px;
+           -moz-border-radius: 2px;
+           -o-border-radius: 2px;
+           -webkit-border-radius: 2px;
+           -khtml-border-radius: 2px;
+        }
+        .breadcrumbs .item ol li a:hover{
+            /*background: #72b5e0;*/
+            background: #d85442;
+            color: #fff;
+        }
+            .breadcrumbs .item .sub-menu{
+                position: absolute;
+                left: 50%; top: 20px;
+                margin-left: -52px;
+                z-index: 1900;
+                padding: 0;
+            }
+            * html .breadcrumbs .item .sub-menu{
+                overflow: hidden;
+            }
+            .breadcrumbs .sub-menu div.wrapper{
+                 padding: 5px;
+                 position: relative;
+                 z-index: 1901;
+            }
+            .breadcrumbs .sub-menu div.columns-1{ width: 142px; }
+            .breadcrumbs .sub-menu div.columns-2{ width: 272px; }
+            .breadcrumbs .sub-menu div.columns-3{ width: 402px; }
+            .breadcrumbs .sub-menu div.columns-4{ width: 532px; }
+            .breadcrumbs .sub-menu div.columns-5{ width: 662px; }
+            .breadcrumbs .sub-menu div.columns-6{ width: 792px; }
+            
+            
+            .breadcrumbs .sub-menu div.bottom-shadow{
+                background: #ffffff;
+                border: 1px solid #d1d1d1;
+                border-radius: 7px;
+                    -moz-border-radius:    7px;
+                     -o-border-radius:     7px;
+                    -webkit-border-radius: 7px;
+                    -khtml-border-radius:  7px;
+                box-shadow: 0 0 10px -5px #2d2d2d;
+                   -moz-box-shadow:    0 0 10px -5px #2d2d2d;
+                   -webkit-box-shadow: 0 0 10px -5px #2d2d2d;
+                /*
+                box-shadow: 0 0 10px -5px #2d2d2d;
+                   -moz-box-shadow: 0 0 10px -5px #2d2d2d;
+                   -webkit-box-shadow: 0 0 10px -5px #2d2d2d;
+               */
+            } 
+            .breadcrumbs .sub-menu div.bottom-shadow div{
+                display: inline-block;
+                width: 100%;
+                padding: 10px 0;
+            }
+            
+            
+            /*
+            .breadcrumbs .item:hover .sub-menu{
+                display: block !important;
+                }
+            */
+            
+            .breadcrumbs div.box-iframe{
+                 display: block;
+                 position: absolute;
+                 width: 100%;
+                 height: 100%;
+                 z-index: 1;
+                 visibility: visible;
+                 background: #f4f4f4;
+                 border: 0 none;
+                 opacity: 0.75;
+                 top: 0; left: 0;
+                 
+                 border-radius: 10px;
+                    -moz-border-radius:    12px;
+                     -o-border-radius:     12px;
+                    -webkit-border-radius: 12px;
+                    -khtml-border-radius:  12px;
+                    
+                 box-shadow: 0 0 8px -2px #2d2d2d;
+                   -moz-box-shadow:    0 0 8px -2px #2d2d2d;
+                   -webkit-box-shadow: 0 0 8px -2px #2d2d2d;
+             }
+             * html .breadcrumbs div.box-iframe{
+                 z-index: 1050;
+                 width: 10000px;
+                 height: 10000px;
+                 filter: alpha(opacity = 75);
+             }
+             .breadcrumbs .sub-menu iframe{
+                 display: none;
+                 }
+             * html .breadcrumbs .sub-menu iframe{
+                 display: block;
+                 position: absolute;
+                 width: 100%;
+                 height: 1000px;
+                 width: 105%;
+                 top: -2px; left: -2px;
+                 z-index: -1;
+                 visibility: visible;
+                 border: 0 none;
+                 background: #fff;
+                 filter: alpha( opacity = 0);
+             }
+                .breadcrumbs ol{
+                    float: left;
+                    width: 120px;
+                    padding: 0 0 0 10px;
+                    margin: 0;
+                    list-style: none;
+                    background: #fff;
+                }
+
+                    .breadcrumbs ol.colspan-1{ width: 110px; }
+                    .breadcrumbs ol.colspan-2{ width: 250px; }
+                    .breadcrumbs ol.colspan-3{ width: 380px; }
+                    .breadcrumbs ol.colspan-4{ width: 510px; }
+                    .breadcrumbs ol.colspan-5{ width: 640px; }
+                    .breadcrumbs ol.colspan-6{ width: 770px; }
+
+                .breadcrumbs ol li{
+                    float: none;
+                    margin: 0 0;
+                    padding: 0;
+                    display: block;
+                    width: 100%;
+                    overflow-x: hidden;
+                }
+                .breadcrumbs ol li{
+                    color: #555555;
+                    font: normal 12px/16px Arial, Helvetica, sans-serif;
+                } 
+                

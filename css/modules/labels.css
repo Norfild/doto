@@ -1,0 +1,164 @@
+/** 
+ *   labels.css [snippet]
+ *   Version : 1.0.0
+ *   date modification __.__.2011
+ *   ----------------------------------
+ */
+
+.label{
+    width:    13px;
+    height:   13px;
+    
+    padding:  2px 6px;
+    margin:   0 5px 0 0;
+    
+    font-size: 12px;
+    white-space: nowrap;
+    
+    border-radius:            2px;
+       -moz-border-radius:    2px;
+       -o-border-radius:      2px;
+       -webkit-border-radius: 2px;
+       -khtml-border-radius:  2px;
+    
+    }
+    
+    
+    a.label:after{
+        position: absolute;
+        width:    13px;
+        height:   6px;
+        top:      3px;
+        left:    -1px;
+        
+        text-align:      center;
+        font-size:       11px;
+        line-height:     2px;
+        letter-spacing:  0;
+        text-decoration: none;
+        border:          1px solid transparent;
+        
+        overflow: hidden;
+        
+        content:  '▼';
+        border-radius:            3px;
+           -moz-border-radius:    3px;
+           -o-border-radius:      3px;
+           -webkit-border-radius: 3px;
+           -khtml-border-radius:  3px;
+        opacity: 0;
+        }
+
+
+    /*
+    a.label:before{
+        position: absolute;
+        width:    13px;
+        height:   13px;
+        top:     -1px;
+        left:    -1px;
+        
+        text-align:      center;
+        font-size:       11px;
+        line-height:     11px;
+        letter-spacing:  0;
+        text-decoration: none;
+        border:          1px solid transparent;
+        
+        content:  '▼';
+        border-radius:            3px;
+           -moz-border-radius:    3px;
+           -o-border-radius:      3px;
+           -webkit-border-radius: 3px;
+           -khtml-border-radius:  3px;
+        
+        opacity: 0;
+        
+        }
+    */
+
+
+
+ol.label-list, 
+ul.label-list, 
+.label-list li{
+    padding:    0;
+    margin:     0;
+    list-style: none;
+    }
+
+
+    
+    .label-list li{
+        font-size:   12px;
+        line-height: 18px;
+        padding:     2px 26px 2px 24px;
+        }
+    
+    .label-list li:hover{
+        background: #c2c2c2;
+        }
+    
+    a.name-label{
+        display:         block;
+        width:           100%;
+        line-height:     18px;
+        color:           #2d2d2d;
+        overflow:        hidden;
+        white-space:     nowrap;
+        text-decoration: none;
+        }
+        .label-list a.name-label:hover{
+            text-decoration: none;
+            }
+
+    .label-list a.label{
+        position: relative;
+        float:    right;
+        padding:  0;
+        margin:   2px -13px 0 0;
+        left:     4px;
+        text-decoration: none;
+        }
+        
+        /*
+        .label-list a.label:hover{
+            box-shadow:        0 0 1px 1px #fff;
+            -moz-box-shadow:   0 0 1px 1px #fff;
+            -webkit-box-shadow:0 0 1px 1px #fff;
+            -o-box-shadow:     0 0 1px 1px #fff;
+            }
+        */
+       
+       
+        .label-list li:hover a.label:after{
+            /*
+            border-color: #fff;
+            */
+            opacity:      1;
+            }
+        
+        /*
+        .label-list a.label:hover:before{
+            opacity:      1;
+            }
+        */
+
+.label.type-1  {   color: #141414;   border-color: #000   ;   background: #fff   ;   }
+.label.type-2  {   color: #141414;   border-color: #c2c2c2;   background: #eaeaea;   }
+.label.type-3  {   color: #141414;   border-color: #c2c2c2;   background: #c2c2c2;   }
+.label.type-4  {   color: #fff   ;   border-color: #858585;   background: #858585;   }
+.label.type-5  {   color: #fff   ;   border-color: #434343;   background: #434343;   }
+.label.type-6  {   color: #fff   ;   border-color: #000   ;   background: #000   ;   }
+.label.type-7  {   color: #e40c00;   border-color: #e40c00;   background: #fff   ;   }
+.label.type-8  {   color: #f62b94;   border-color: #f62b94;   background: #fff   ;   }
+.label.type-9  {   color: #27488e;   border-color: #27488e;   background: #fff   ;   }
+.label.type-10 {   color: #189406;   border-color: #189406;   background: #fff   ;   }
+.label.type-11 {   color: #b6b400;   border-color: #d1cf19;   background: #fff   ;   }
+.label.type-12 {   color: #ff7e00;   border-color: #ff7e00;   background: #fff   ;   }
+.label.type-13 {   color: #fff   ;   border-color: #e40c00;   background: #e40c00;   }
+.label.type-14 {   color: #fff   ;   border-color: #f62b94;   background: #f62b94;   }
+.label.type-15 {   color: #fff   ;   border-color: #62cffc;   background: #62cffc;   }
+.label.type-16 {   color: #fff   ;   border-color: #178aba;   background: #178aba;   }
+.label.type-17 {   color: #fff   ;   border-color: #f89406;   background: #f89406;   }
+.label.type-18 {   color: #fff   ;   border-color: #189406;   background: #189406;   }

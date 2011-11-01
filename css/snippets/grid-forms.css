@@ -1,0 +1,131 @@
+/* @charset "utf-8"; */
+
+/** 
+ *   grid-form.css [snippet]
+ *   Version : 1.0.0
+ *   date modification 22.12.2010
+ *   ----------------------------------
+ */
+
+
+
+
+form .hidden{
+    display:     block;
+    position:    relative;
+    height:      0;
+    overflow:    hidden;
+    visibility:  hidden;
+    line-height: 0;
+    font-size:   0;
+    }
+
+ul.ckecklist, 
+ol.ckecklist{
+    padding:    0;
+    margin:     15px 0;
+    list-style: none;
+    }
+    
+    .ckecklist li{
+        padding:    0;
+        margin:     5px 0;
+        list-style: none;
+        }
+
+
+
+
+.grid .rows{
+    display: inline-block; /* For IE */
+    }
+
+.grid .rows{
+    display: block;
+    border:  none;
+    margin:  15px 0;
+    }
+
+/*
+    form.grid .rows input { width: 200px; }
+    form.grid .rows select{ width: 200px; }
+*/
+
+
+
+    form.grid label{
+        float:       left;
+        width:       130px;
+        padding-top: 2px;
+        }
+        
+        .grid.text-rtl label{ text-align: right; }
+        
+        form.grid .input label{
+            float:      none;
+            width:      auto;
+            text-align: left;
+            padding:    0;
+            }
+        
+        form.grid .ckecklist label{
+            float:      none;
+            width:      auto;
+            text-align: left;
+            padding:    0;
+            }
+    
+    form.grid .input {
+        display:     block;
+        margin-left: 150px;
+        }
+    
+    form.grid .select {
+        display:     block;
+        margin-left: 150px;
+        }
+    
+    form.grid .ckecklist{
+        display:     block;
+        padding:     3px 0 0;
+        margin:      0;
+        margin-left: 150px;
+        
+        }
+        form.grid .ckecklist li{
+            margin-top: 0;
+            }
+    
+    form.grid .rows-button {
+        display:     block;
+        margin:      15px 0 15px 150px;
+        }
+        form.grid .rows-button input, 
+        form.grid .rows-button button, 
+        form.grid .rows-button .button{
+            margin-right: 5px;
+            }
+    
+    form.grid ins{
+        margin-right: -8px;
+        font:          normal normal 12px/12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+        color:         #e92929;
+        border:        0 none;
+        text-decoration: none;
+        }
+
+    form.grid .help-inline{
+        color: #777;
+        }
+    
+    form.grid .help-block{
+        color:  #777;
+        margin: 5px 0;
+        }
+
+    form.grid select.date { width: 60px; }
+    form.grid select.month{ width: 120px; }
+    form.grid select.years{ width: 60px; }
+
+
+

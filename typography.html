@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Layouts</title>
+        
+        <link href="css/init.css" type="text/css" rel="stylesheet" />
+        <!--[if 7]>
+            <link href="css/core-css/ie.css" type="text/css" rel="stylesheet" />
+            <link href="css/ie.css" type="text/css" rel="stylesheet" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link href="css/ie6.css" type="text/css" rel="stylesheet" />
+        <![endif]-->
+        <link type="text/css" rel="stylesheet" media="print" href="css/core-css/print.css" />
+        
+        <script src="js/init.js"></script>
+        
+    </head>
+    <body>
+
+        <div class="container-body">
+            
+            <div class="header">
+                <div class="menu">
+                    <a href="overview.html">Overview DoTo</a>
+                    <a href="about.html">About</a>
+                    <a href="grid.html">Grid</a>
+                    <a href="layouts.html">Layouts</a>
+                    <a href="typography.html" class="active">Typography</a>
+                    <a href="tables.html">Tables</a>
+                    <a href="forms.html">Forms</a>
+                    <a href="navigation.html">Navigation</a>
+                    <a href="alerts.html">Alerts</a>
+                    <a href="popovers.html">Popovers</a>
+                    
+                    <a href="javascript: showGrid('show_grid')">Show Grid</a>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="container-main" id="show_grid">
+                
+                
+<!--
+
+-------------   SECTIONS ALERTS   ------------
+
+-->
+                        
+                        <section id="typography">
+                            
+                            <h1 class="head">
+                                Typography
+                                <small>Headings, paragraphs, lists, and other inline type elements</small>
+                            </h1>
+                            
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <h2>Heading & Links</h2>
+                                    <p>
+                                        A standard typographic hierarchy for structuring your webpages.
+                                    </p>
+                                    <p>
+                                        We use those variables, and some math, to create the margins,
+                                        paddings, and line-heights of all our type and more.
+                                    </p>
+                                </div>
+                                
+                                <div class="offset4">
+                                    <h1>Heading 1</h1>
+                                    <h2>Heading 2</h2>
+                                    <h3>Heading 3</h3>
+                                    <h4>Heading 4</h4>
+                                    <h5>Heading 4</h5>
+                                    <h6>Heading 4</h6>
+                                    <a href="#">Click to know more</a>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <h2>Misc. elements</h2>
+                                    <p>Using emphasis, addresses, &amp; abbreviations</p>
+                                    <p>
+                                        <code>&lt;strong&gt;</code>
+                                        <code>&lt;em&gt;</code>
+                                        <code>&lt;address&gt;</code>
+                                        <code>&lt;abbr&gt;</code>
+                                    </p>
+                                </div>
+                                <div class="offset4">
+                                    
+                                    <h3>When to use</h3>
+                                    <p>
+                                        Emphasis tags ( <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>) 
+                                        should be used to indicate additional importance or emphasis of a word 
+                                        or phrase relative to its surrounding copy. Use <code>&lt;strong&gt;</code>
+                                        for importance and <code>&lt;em&gt;</code> for <em>stress</em> emphasis.
+                                    </p>
+                                    
+                                    <h3>Emphasis in a paragraph</h3>
+                                    <p>
+                                        <a href="#">Fusce dapibus</a>, <strong>tellus ac cursus commodo</strong>,
+                                        <em>tortor mauris condimentum nibh</em>, ut fermentum massa justo sit amet risus.
+                                        Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.
+                                    </p>
+                                    <p>
+                                        <strong>Note:</strong> It's still okay to use 
+                                        <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>
+                                        tags in HTML5 and they don't have to be styled bold and italic, respectively 
+                                        (although if there is a more semantic element, use it). 
+                                        <code>&lt;b&gt;</code> is meant to highlight words or phrases without 
+                                        conveying additional importance, while <code>&lt;i&gt;</code>
+                                        is mostly for voice, technical terms, etc.
+                                    </p>
+                                    
+                                    <h3>Addresses</h3>
+                                    <p>
+                                        The <code>&lt;address&gt;</code> element is used for contact information for 
+                                        its nearest ancestor, or the entire body of work. Here are two examples of how it could be used:
+                                    </p>
+                                    
+                                    <div class="row">
+                                        <div class="span4">
+                                            <address>
+                                                <strong>Twitter, Inc.</strong>
+                                                <br />
+                                                795 Folsom Ave, Suite 600
+                                                <br />
+                                                San Francisco, CA 94107
+                                                <br />
+                                                <abbr title="Phone">P:</abbr>
+                                                (123) 456-7890
+                                            </address>
+                                        </div>
+                                        <div class="span4">
+                                            <address>
+                                                <strong>Full Name</strong>
+                                                <br />
+                                                <a mailto="">first.last@gmail.com</a>
+                                            </address>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>
+                                        <strong>Note:</strong> Each line in an <code>&lt;address&gt;</code>
+                                        must end with a line-break (<code>&lt;br /&gt;</code>) or be wrapped in a 
+                                        block-level tag (e.g., <code>&lt;p&gt;</code>) to properly structure the content.
+                                    </p>
+                                    
+                                    <h3>Abbreviations</h3>
+                                    <p>
+                                        For abbreviations and acronyms, use the <code>&lt;abbr&gt;</code>
+                                        tag ( <code>&lt;acronym&gt;</code>is deprecated in 
+                                        <abbr title="HyperText Markup Langugage 5">HTML5</abbr> ).
+                                        Put the shorthand form within the tag and set a title for the complete name.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            <div class="row">
+                                <div class="span4">
+                                    <h2>Blockquotes</h2>
+                                    <p>
+                                        <code>&lt;blockquote&gt;</code>
+                                        <code>&lt;p&gt;</code>
+                                        <code>&lt;small&gt;</code>
+                                    </p>
+                                </div>
+                                <div class="span12">
+                                    <h3>How to quote</h3>
+                                    <p>
+                                        To include a blockquote, wrap 
+                                        <code>&lt;blockquote&gt;</code>
+                                        around 
+                                        <code>&lt;p&gt;</code>
+                                        and 
+                                        <code>&lt;small&gt;</code>
+                                        tags. Use the 
+                                        <code>&lt;small&gt;</code>
+                                        element to cite your source and you'll get an em dash 
+                                        <code>&amp;mdash;</code>
+                                        before it.
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                                        </p>
+                                        <small>
+                                            Dr. Julius Hibbert
+                                        </small>
+                                    </blockquote>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            <h2>
+                                Lists
+                            </h2>
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <h4>Unordered <code>&lt;ul&gt;</code></h4>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>
+                                            Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h4>
+                                        Unstyled <code>&lt;ul.unstyled&gt;</code>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>
+                                            Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h4>
+                                        Ordered <code>&lt;ol&gt;</code>
+                                    </h4>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>Nulla volutpat aliquam velit</li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h4>
+                                        Description <code>&lt;dl&gt;</code>
+                                    </h4>
+                                    <dl>
+                                        <dt>Description lists</dt>
+                                        <dd>A description list is perfect for defining terms.</dd>
+                                        <dt>Euismod</dt>
+                                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                        <dt>Malesuada porta</dt>
+                                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                    </dl>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <h4>
+                                        <code>ul.unordered-list ul</code>
+                                    </h4>
+                                    <ul class="unordered-list">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>
+                                            Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h4>
+                                        <code>ul.unstyled ul.unordered-list</code>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>
+                                            Nulla volutpat aliquam velit
+                                            <ul class="unordered-list">
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h4>
+                                        <code>ol.unordered-list</code>
+                                    </h4>
+                                    <ol class="unordered-list">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>Nulla volutpat aliquam velit</li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h4>
+                                        <code>dl.unordered-list</code>
+                                    </h4>
+                                    <dl class="unordered-list">
+                                        <dt>Description lists</dt>
+                                        <dd>A description list is perfect for defining terms.</dd>
+                                        <dt>Euismod</dt>
+                                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                        <dt>Malesuada porta</dt>
+                                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                    </dl>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <h2>labels</h2>
+                                    <p>
+                                        
+                                        Стандартный набор меток, организованый как дополнительный модуль
+                                        
+                                    </p>
+                                    
+                                </div>
+                                
+                                <div class="span8">
+                                
+                                    <h3>Inline labels <code>span.label</code></h3>
+                                    
+                                    <p style="line-height: 30px;">
+                                        
+                                        <span class="label type-1">label type-1 </span>
+                                        <span class="label type-2">label type-2 </span>
+                                        <span class="label type-3">label type-3 </span>
+                                        <span class="label type-4">label type-4 </span>
+                                        <span class="label type-5">label type-5 </span>
+                                        <span class="label type-6">label type-6 </span>
+                                        <span class="label type-7">label type-7 </span>
+                                        <span class="label type-8">label type-8 </span>
+                                        <span class="label type-9">label type-9 </span>
+                                        <span class="label type-10">label type-10</span>
+                                        <span class="label type-11">label type-11</span>
+                                        <span class="label type-12">label type-12</span>
+                                        <span class="label type-13">label type-13</span>
+                                        <span class="label type-14">label type-14</span>
+                                        <span class="label type-15">label type-15</span>
+                                        <span class="label type-16">label type-16</span>
+                                        <span class="label type-17">label type-17</span>
+                                        <span class="label type-18">label type-18</span>
+                                        
+                                    </p>
+                                
+                                </div>
+                                
+                                <div class="span4">
+                                    
+                                    <h3>List labels</h3>
+                                    
+                                    
+                                    <ol class="label-list">
+                                        <li>
+                                            <a href="#" class="label type-1"></a>
+                                            <a href="#" class="name-label">label type 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="label type-2"></a>
+                                            <a href="#" class="name-label">label type 2</a>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="label type-3"></a>
+                                             <a href="#" class="name-label">label type 3</a>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="label type-4"></a>
+                                             <a href="#" class="name-label">label type 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="label type-5"></a>
+                                            <a href="#" class="name-label">label type 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="label type-6"></a>
+                                            <a href="#" class="name-label">label type 6</a>
+                                        </li>
+                                        
+                                        <li>
+                                             <a href="#" class="label type-13"></a>
+                                             <a href="#" class="name-label">label type 13</a>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="label type-14"></a>
+                                             <a href="#" class="name-label">label type 14</a>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="label type-15"></a>
+                                             <a href="#" class="name-label">label type 15</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="label type-16"></a>
+                                            <a href="#" class="name-label">label type 16</a>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="label type-17"></a>
+                                             <a href="#" class="name-label">label type 17</a>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="label type-18"></a>
+                                             <a href="#" class="name-label">label type 18</a>
+                                        </li>
+                                    </ol>
+                                
+                                </div>
+                                    
+                                    
+                            </div>
+                            
+                            
+                            
+                        </section>
+                        
+                        
+                        
+                        
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="wrapper">
+                RIA CSS Framework v2.0 <sup>dev</sup>
+            </div>
+        </div>
+        
+    </body>
+</html>

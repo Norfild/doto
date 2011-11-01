@@ -1,0 +1,31 @@
+/* @charset "utf-8"; */
+
+
+/**
+ *     if ie 7 only
+ * */
+
+*:first-child+html body{
+    overflow: hidden;
+    }
+*:first-child+html .container-body{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    }
+
+/* round.css */
+
+.round{ display: inline-block; }
+.round{
+    display: block;
+    position: relative;
+    z-index: 1000;
+    }
+.round em.bl, 
+.round em.br { bottom: 0; }
+
+.element-select{
+    zoom: 1;
+    z-index: 1000;
+    }

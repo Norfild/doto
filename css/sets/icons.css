@@ -1,0 +1,65 @@
+/* @charset "utf-8"; */
+
+/** 
+ *   Icons.css
+ *   Version : 0.1.0
+ *   date modification -none-
+ *   ----------------------------------
+ *   1.  
+ */
+
+
+
+/**
+ *         1. icons-x12
+ *  */
+
+.icons-x12{
+    background-image:  url("http://img.auto.ria.ua/images/icons/icons-x12.gif?v02");
+    background-repeat: no-repeat;
+    }
+    .icons-x12.label-x12             { background-position: 0   0    ; }
+    .icons-x12.icq-x12               { background-position: 0 -50px  ; }
+    .icons-x12.help-x12              { background-position: 0 -100px ; }
+    .icons-x12.cars-x12              { background-position: 0 -150px ; }
+    
+    .icons-x12.report-x12            { background-position: 0 -250px ; }
+    .icons-x12.notepad-x12           { background-position: 0 -300px ; }
+    .icons-x12.remove-x12            { background-position: 0 -350px ; }
+    .icons-x12.clock-x12             { background-position: 0 -400px ; }
+    .icons-x12.user-x12              { background-position: 0 -450px ; }
+    .icons-x12.remarka-x12           { background-position: 0 -500px ; }
+    .icons-x12.megaphoto-x12         { background-position: 0 -550px ; }
+    .icons-x12.up-page-x12           { background-position: 100% -600px; }
+    .icons-x12.exit-x12              { background-position: 0 -650px ; }
+    .icons-x12.login-x12             { background-position: 0 -700px ; }
+    .icons-x12.filter-x12            { background-position: 0 -750px ; }
+    .icons-x12.add-x12               { background-position: 0 -800px ; }
+    .icons-x12.phone-mobile-x12      { background-position: 0 -850px ; }
+    .icons-x12.phone-mobile-check-x12{ background-position: 0 -900px ; }
+    .icons-x12.phone-home-x12        { background-position: 0 -950px ; }
+    .icons-x12.phone-home-check-x12  { background-position: 0 -1000px; }
+    
+    .icons-x12.link-x12              { background-position: 0 -1050px; }
+    .icons-x12.maps-x12              { background-position: 0 -1100px; }
+    
+    .icons-x12.mail-x12              { background-position: 0 -1250px; }
+    
+    .icons-x12.added-item-x12        { background-position: 0 -1300px; }
+    .icons-x12.updated-item-x12      { background-position: 0 -1350px; }
+    .icons-x12.views-item-x12        { background-position: 0 -1400px; }
+    .icons-x12.id-item-x12           { background-position: 0 -1450px; }
+    .icons-x12.print-x12             { background-position: 0 -1500px; }
+    .icons-x12.car-sold-x12          { background-position: 0 -1550px; }
+    .icons-x12.add-compare-x12       { background-position: 0 -1600px; }
+    .icons-x12.blacklist-x12         { background-position: 0 -1650px; }
+    .icons-x12.cover-x12             { background-position: 0 -1700px; }
+    .icons-x12.bags-x12              { background-position: 0 -1750px; }
+    .icons-x12.disk-x12              { background-position: 0 -1800px; }
+    .icons-x12.mats-x12              { background-position: 0 -1850px; }
+    .icons-x12.tyres-x12             { background-position: 0 -1900px; }
+    .icons-x12.sound-x12             { background-position: 0 -1950px; }
+    .icons-x12.add-notepad-x12       { background-position: 0 -2000px; }
+    .icons-x12.added-notepad-x12     { background-position: 0 -2050px; }
+
+

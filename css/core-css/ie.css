@@ -1,0 +1,48 @@
+/* @charset "utf-8"; */
+
+/**
+ *  ie.css
+ *  Version : 0.6.2
+ *  date modification 5.07.2010, 16:15
+ *  ----------------------
+ *  
+ *  1. Style for IE 5.5 <-> IE 7
+ *  
+ *  */
+
+.clr{
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+hr{
+    height: 2px;
+    font-size: 2px;
+    list-height: 2px;
+    display: block;
+    }
+
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+pre{
+    width: auto !important;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0 -2px;
+}
+
+input[type=checkbox], 
+input[type=radio], 
+input.checkbox, 
+input.radio{ left: -4px; }
+
+fieldset{ margin:0; }
+
+select{
+    padding-right: 2px;
+    }
+.header{
+    background:    #444 url('../../images/roll.png') 0 100% repeat-x;
+    }

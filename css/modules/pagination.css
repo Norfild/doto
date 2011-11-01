@@ -1,0 +1,101 @@
+/** 
+ *   pagination.css [modules]
+ *   Version : 1.0.0
+ *   date modification __.__.2011
+ *   ----------------------------------
+ */
+
+.pagination{
+    display:  inline-block;
+    width:    100%;
+    margin:   0 0 12px;
+    }
+
+    .pagination .disabled, 
+    .pagination .disabled:hover{
+        color:           #ddd;
+        text-decoration: none;
+        cursor:          default;
+        }
+
+
+    .pagination .active, 
+    .pagination .active:hover{
+        color:           #fff;
+        background:      #2a2a2a;
+        text-decoration: none;
+        cursor:          default;
+        }
+    
+
+    .pagination .arr{
+        float:       left;
+        font-size:   13px;
+        padding:     2px 0;
+        }
+        .pagination .arr a{
+            padding: 0;
+            }
+
+
+    .pagination .page{
+        float:       left;
+        white-space: nowrap;
+        padding:     0 7px;
+        font-size:   15px;
+        }
+
+        .pagination a{
+            display: inline-table;
+            padding: 2px 7px;
+            }
+        
+        .pagination em.bull{
+            display: inline-table;
+            }
+
+
+
+
+.pager{
+    display: inline-block;
+    width: 100%;
+    font: normal 15px/21px Arial, Helvetica, sans-serif;
+    cursor: default;
+    margin-bottom: 20px;
+}
+    .pager .page-scroll{
+        margin-bottom: 10px;
+        }
+    .pager .page-scroll strong{
+        font-size: 13px;
+        margin-right: 10px;
+        }
+    .pager .next, 
+    .pager .prev{
+        margin-right: 10px;
+        color: #345a9b;
+        cursor: default;
+        }
+    .pager span.next, 
+    .pager span.prev{
+        color: #404040;
+        }
+    .pager .page{
+        text-align: left;
+        }
+        .pager .page a{
+            margin: 0 3px;
+            }
+        .pager .page strong{
+            font-weight: normal;
+            padding:     1px 6px;
+            background:  #2a2a2a;
+            color:       #fff;
+            border-radius:            2px;
+               -moz-border-radius:    2px;
+               -o-border-radius:      2px;
+               -webkit-border-radius: 2px;
+               -khtml-border-radius:  2px;
+           cursor: default;
+        }

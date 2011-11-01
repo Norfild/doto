@@ -1,0 +1,347 @@
+/** 
+ *   button.css
+ *   Version : 0.1.0
+ *   date modification -none-
+ *   ----------------------------------
+ *   1. 
+ *   
+ */
+
+
+
+
+    .group-button{
+        display:     inline-block;
+        white-space: nowrap;
+        }
+
+        .group-button .button{
+            
+            float: left;
+            margin-right: -1px;
+            
+            border-radius:            1px;
+               -moz-border-radius:    1px;
+               -o-border-radius:      1px;
+               -webkit-border-radius: 1px;
+               -khtml-border-radius:  1px;
+            }
+        
+        .group-button .button:first-child{
+            
+            padding-left: 12px;
+            border-radius:         3px 0 0 3px;
+               -moz-border-radius: 3px 0 0 3px;
+               -webkit-border-top-left-radius:    3px;
+               -webkit-border-bottom-left-radius: 3px;
+            /*
+            border-radius:         12px 0 0 12px;
+               -moz-border-radius: 12px 0 0 12px;
+               -webkit-border-top-left-radius:    12px;
+               -webkit-border-bottom-left-radius: 12px;
+            */
+            }
+        
+        .group-button .button:last-child{
+            
+            padding-right: 12px;
+            border-radius:         0 3px 3px 0;
+               -moz-border-radius: 0 3px 3px 0;
+               -webkit-border-top-right-radius:    3px;
+               -webkit-border-bottom-right-radius: 3px;
+            /*
+            border-radius:         0 12px 12px 0;
+               -moz-border-radius: 0 12px 12px 0;
+               -webkit-border-top-right-radius:    12px;
+               -webkit-border-bottom-right-radius: 12px;
+            */
+            }
+        
+        
+        
+        .group-button .button:hover{ position: relative; }
+        
+        .group-button .button:focus{ position: relative; }
+
+
+    .button.disabled{
+       -webkit-user-select: none;
+        opacity: 0.5;
+        cursor:  default;
+        }
+
+
+
+/*--------------------------------------------------
+ *                                                  
+ *         COLOR BUTTONS
+ *         ________________________
+ *         1. green
+ *         2. blue
+ *         3. red
+ *                                                  
+ *--------------------------------------------------*/
+
+
+/* green */
+
+input[type="button"].green, 
+input[type="submit"].green, 
+button.green, .button.green{
+    color:         #f4f8ef;
+    background:    #386230;
+    border:        1px solid #335c2d;
+    
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.10, #008000),
+        color-stop(0.90, #009000)
+        );
+    background-image: -o-linear-gradient(
+        top, 
+        #009000,
+        #008000
+        );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        #008000 10%,
+        #009000 90%
+        );
+
+    text-shadow: 1px 0 0 #538312;
+    }
+    
+    input[type="button"].green:hover, 
+    input[type="submit"].green:hover, 
+    button.green:hover, 
+    .button.green:hover{
+        
+        background:    #538018;
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.10, #006500),
+            color-stop(0.90, #007500)
+            );
+        background-image: -o-linear-gradient(
+            top, 
+            #007500,
+            #006500
+            );
+        background-image: -moz-linear-gradient(
+            center bottom,
+            #006500 10%,
+            #007500 90%
+            );
+        }
+    
+    input[type="button"].green:active, 
+    input[type="submit"].green:active, 
+    button.green:active, 
+    .button.green:active{
+        
+        border-color: #3f6708;
+        
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.10, #009000),
+            color-stop(0.90, #008000)
+            );
+        background-image: -o-linear-gradient(
+            top, 
+            #008000,
+            #009000
+            );
+        background-image: -moz-linear-gradient(
+            center bottom,
+            #009000 10%,
+            #008000 90%
+            );
+        text-shadow:     -1px -1px 0 #538312;
+        }
+
+
+
+
+/* blue */
+
+input[type="button"].blue, 
+input[type="submit"].blue, 
+button.blue, .button.blue{
+    color:         #e2f1f7;
+    background:    #0094ee;
+    border:        1px solid #0083b5;
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.10, #0094ee),
+        color-stop(0.90, #00a8ee)
+        );
+    background-image: -o-linear-gradient(
+        top, 
+        #00a8ee,
+        #0094ee
+        );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        #0094ee 10%,
+        #00a8ee 90%
+        );
+    text-shadow: 1px 0 0 #0083b5;
+    }
+    
+    input[type="button"].blue:hover, 
+    input[type="submit"].blue:hover, 
+    button.blue:hover, 
+    .button.blue:hover{
+        
+        border-color: #006c95;
+        
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.10, #0085dd),
+            color-stop(0.90, #0c90e7)
+            );
+        background-image: -o-linear-gradient(
+            top, 
+            #0c90e7,
+            #0085dd
+            );
+        background-image: -moz-linear-gradient(
+            center bottom,
+            #0085dd 10%,
+            #0c90e7 90%
+            );
+        }
+    
+    input[type="button"].blue:active, 
+    input[type="submit"].blue:active, 
+    button.blue:active, 
+    .button.blue:active{
+        
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.10, #0c90e7),
+            color-stop(0.90, #0085dd)
+            );
+        background-image: -o-linear-gradient(
+            top, 
+            #0c90e7,
+            #0094cb
+            );
+        background-image: -moz-linear-gradient(
+            center bottom,
+            #0094cb 10%,
+            #0c90e7 90%
+            );
+        text-shadow: -1px -1px 0 #0083b5;
+        }
+
+
+
+
+
+/* red */
+
+input[type="button"].red, 
+input[type="submit"].red, 
+button.red, .button.red{
+    color:         #fbeded;
+    background:    #c63e37;
+    border:        1px solid #b0362f;
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.10, #c53d36),
+        color-stop(0.90, #d8443c)
+        );
+    background-image: -o-linear-gradient(
+        top, 
+        #d8443c,
+        #c53d36
+        );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        #c53d36 10%,
+        #d8443c 90%
+        );
+    text-shadow: 1px 0 0 #aa403c;
+    }
+    
+    input[type="button"].red:hover, 
+    input[type="submit"].red:hover, 
+    button.red:hover, 
+    .button.red:hover{
+        
+        border-color: #6a0e09;
+        
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.10, #bc332c),
+            color-stop(0.90, #d44a44)
+            );
+        background-image: -o-linear-gradient(
+            top, 
+            #d44a44,
+            #bc332c
+            );
+        background-image: -moz-linear-gradient(
+            center bottom,
+            #bc332c 10%,
+            #d44a44 90%
+            );
+        }
+    
+    input[type="button"].red:active, 
+    input[type="submit"].red:active, 
+    button.red:active, 
+    .button.red:active{
+        
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.10, #d44a44),
+            color-stop(0.90, #bc332c)
+            );
+        background-image: -o-linear-gradient(
+            top, 
+            #bc332c,
+            #d44a44
+            );
+        background-image: -moz-linear-gradient(
+            center bottom,
+            #d44a44 10%,
+            #bc332c 90%
+            );
+        text-shadow: -1px -1px 0 #aa403c;
+        }
+
+
+
+
+
+
+input[type="button"].loader, 
+input[type="submit"].loader{
+    background-image:    url('../../images/common/loader.gif');
+    background-position: 5px 50%;
+    background-repeat:   no-repeat;
+    padding-left: 24px;
+    }

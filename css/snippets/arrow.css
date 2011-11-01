@@ -1,0 +1,163 @@
+/* @charset "utf-8"; */
+
+/** 
+ *   arrow.css [snippet]
+ *   Version : 1.0.0
+ *   date modification 13.10.2011
+ *   ________________________________
+ *     
+ *
+ */
+
+
+
+.__top:before    { top:    5px; }
+.__bottom:before { bottom: 5px; }
+.__left:before   { left:   5px; }
+.__right:before  { right:  5px; }
+
+
+
+.larr, 
+.uarr, 
+.darr, 
+.rarr{
+    position: relative;
+    }
+
+
+
+.larr:before, 
+.uarr:before, 
+.darr:before, 
+.rarr:before{
+    position:    absolute;
+    width:       0;
+    height:      0;
+    font-size:   0;
+    line-height: 0;
+    border:      0 dashed transparent;
+    content:     "";
+    z-index:     100;
+    }
+
+
+
+/*
+ *     insert larr element
+ */
+
+.larr:before{
+    border-right:  5px solid #000;
+    border-bottom: 5px dashed transparent;
+    border-top:    5px solid transparent;
+    left:         -5px;
+    }
+    
+    .warning.larr:before  { border-right-color: #fdf5d9; }
+    .succes.larr:before   { border-right-color: #d1eed1; }
+    .error.larr:before    { border-right-color: #fddfde; }
+    .info.larr:before     { border-right-color: #ddf4fb; }
+
+    .__center.larr:before { top: 50%; margin-top: -5px;}
+
+
+
+/*
+ *     insert uarr element
+ */
+
+.uarr:before{
+    border-bottom: 5px solid #000;
+    border-left:   5px dashed transparent;
+    border-right:  5px solid transparent;
+    top:          -5px;
+    }
+    
+        
+    .warning.uarr:before  { border-bottom-color: #fdf5d9; }
+    .succes.uarr:before   { border-bottom-color: #d1eed1; }
+    .error.uarr:before    { border-bottom-color: #fddfde; }
+    .info.uarr:before     { border-bottom-color: #ddf4fb; }
+
+    .__center.uarr:before { left: 50%; margin-left: -5px;}
+
+
+
+/*
+ *     insert rarr element
+ */
+
+.rarr:before{
+    border-left:   5px solid #000;
+    border-bottom: 5px dashed transparent;
+    border-top:    5px solid transparent;
+    right:        -5px;
+    }
+    
+    .warning.rarr:before  { border-left-color: #fdf5d9; }
+    .succes.rarr:before   { border-left-color: #d1eed1; }
+    .error.rarr:before    { border-left-color: #fddfde; }
+    .info.rarr:before     { border-left-color: #ddf4fb; }
+
+    .__center.rarr:before { top: 50%; margin-top: -5px;}
+
+
+
+/*
+ *     insert darr element
+ */
+
+.darr:before{
+    border-top:   5px solid #000;
+    border-left:  5px dashed transparent;
+    border-right: 5px solid transparent;
+    bottom:      -5px;
+    }
+    
+        
+    .warning.darr:before  { border-top-color: #fdf5d9; }
+    .succes.darr:before   { border-top-color: #d1eed1; }
+    .error.darr:before    { border-top-color: #fddfde; }
+    .info.darr:before     { border-top-color: #ddf4fb; }
+
+    .__center.darr:before { left: 50%; margin-left: -5px;}
+
+
+
+/*
+ *     insert smoll uarr element in alerts
+ */
+
+.__smoll.__top:before    { top:    10px; }
+.__smoll.__bottom:before { bottom: 10px; }
+.__smoll.__left:before   { left:   10px; }
+.__smoll.__right:before  { right:  10px; }
+
+.__smoll.larr:before { left:   -20px; }
+.__smoll.uarr:before { top:    -20px; }
+.__smoll.darr:before { bottom: -20px; }
+.__smoll.rarr:before { right:  -20px; }
+
+.__smoll.larr:before{
+    border-width: 10px;
+    border-top:  0 none;
+    }
+
+.__smoll.uarr:before{
+    border-width: 10px;
+    border-left:  0 none;
+    }
+    
+.__smoll.rarr:before{
+    border-width: 10px;
+    border-top:  0 none;
+    }
+
+.__smoll.darr:before{
+    border-width: 10px;
+    border-left:  0 none;
+    }
+
+
+

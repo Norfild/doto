@@ -1,0 +1,306 @@
+/* @charset "utf-8"; */
+
+/** 
+ *   authorization.css [snippet]
+ *   Version : 0.9.0
+ *   date modification 22.12.2010
+ *   ----------------------------------
+ *   1. 
+ *   
+ */
+
+
+
+.window-login div.container-item{
+    border: 0 none;
+    margin: 0 0 2px;
+    padding: 10px 0;
+}
+
+div.window-login a.close-alert{
+    margin-top: -7px;
+    right: 18px;
+}
+
+/**
+ *     form authorization
+ * */
+
+form.form-login{
+    display: block;
+    padding: 15px 10px 0 10px;
+}
+    .form-login .item-input, 
+    .form-login .item-check{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-login .item-input{
+        display: inline-block;
+        width: 100%;
+    }
+        .form-login .item-input label{
+            float: left;
+            width: 75px;
+            font-weight: bold;
+            line-height: 22px;
+        }
+        .form-login .item-input span, 
+        .form-login .item-check, 
+        .form-login .item-submit{
+            display: block;
+            margin-left: 75px;
+            padding-right: 4px;
+        }
+        .form-login .item-input input{ width: 100%; }
+        
+        .form-login .item-check ol{
+            font-size: 12px;
+            color: #256799;
+            }
+            .form-login li a.bezpeka-ria{
+                margin-left: -20px;
+                }
+    
+
+/* MENU STEP */
+
+.bar-authorization{
+    border: 5px solid #e6f3fa;
+    border-top: 0 none;
+    padding-bottom: 1px;
+    font: normal normal 13px/18px Arial, Helvetica, sans-serif;
+}
+
+    .bar-authorization h4.title{
+        border-bottom-color: #a4c8db;
+    }
+
+    .bar-authorization .equal-height, 
+    .bar-authorization .equal-height .box-wrappered{ display: inline-block; }
+    .bar-authorization .equal-height, 
+    .bar-authorization .equal-height .box-wrappered{ display: block; }
+    .bar-authorization .equal-height{ width: 405px; }
+    
+    .bar-authorization .equal-height .box-wrappered {
+        width: 329px;
+        background: #e2f4ff ;
+    }    
+        .bar-authorization .equal-height div.box-left {
+            float: left;
+            display: block;
+            width: 375px;
+            padding: 0 15px;
+            margin: 0;
+            left: 0;
+            margin: 0 0 0 -405px ;
+            right: -405px !important;
+        }        
+        .bar-authorization .equal-height div.box-right{
+            float: left;
+            padding: 0 15px;
+            width: 294px;
+        }
+
+    /*
+     *   style form registration
+     * */
+
+    .bar-authorization .grid-form .box label{
+        border-bottom: 1px dotted;
+        padding: 0;
+        margin-right: 62%;
+    }
+        .bar-authorization .form-registration .box label{
+            border-bottom-color: #e3e3e3;
+        }
+        .bar-authorization div.box label.mobile{
+            display: inline;
+            border: 0 none;
+            float: none;
+            width: auto;
+            font: normal 13px/21px Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .bar-authorization div.box label.mobile input{
+            margin-bottom: 0;
+        }
+        
+        .bar-authorization .grid-form .phone a.help{ left: -16px; }
+    
+    
+        .phone .swich-container{
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+            padding: 4px 0 0;
+        }
+            .swich-container .ico-uarr-x12, 
+            .swich-container .ico-darr-x12{
+                float: left;
+            }
+            .swich-container .delete{
+                padding-right: 16px;
+                color: #d40000;
+                
+            }
+        .phone .box-additional-bar, 
+        .phone .icons-x12{
+            font: normal 11px/18px Arial, Helvetica, sans-serif;
+        }
+        
+        .phone .number-phone{
+            margin-bottom: 10px;
+        }
+                .number-phone .icons-x12, 
+                .number-phone .delete{
+                    background: url("http://new.auto.ria.ua/club/img/icons/icons-x12.gif") no-repeat;
+                    
+                }
+                .number-phone .icons-x12{
+                    padding-left: 16px;
+                    }
+                .number-phone a.icons-x12.ico-uarr-x12 { background-position: 0 -50px ; }
+                .number-phone a.icons-x12.ico-darr-x12 { background-position: 0 -100px; }
+                .number-phone a.delete{
+                    background-position: 100% -250px;
+                    }
+                
+                .phone .link-add-rows a.add-green-x12{
+                    color: #086f2f;
+                    background-position: -2px -799px;
+                    padding-left: 16px;
+                    }
+                
+                
+                
+                
+        
+        .phone .link-add-rows{
+            margin: 0 0 10px;
+        }
+            
+        
+        
+        .phone .additional-bar {
+            margin-top: 4px;
+            padding: 1px 5px;
+            background: #e2f4ff;
+            font: normal 13px/21px Arial, Helvetica, sans-serif;
+        }
+        .phone .additional-bar .rows{
+            margin: 10px; 
+        }
+            .phone .additional-bar .rows label{
+                display: block;
+                margin-right: 70%;
+                border: 0 none;
+                text-align: right;
+            }
+            .phone .additional-bar .rows span{
+                float: right;
+                width: 65%;
+                text-align: right;
+                background: none;
+            }
+             .phone .additional-bar .rows dfn{
+                 font-style: normal;
+             }
+            .grid-form .box .phone .additional-bar input{
+                width: 95%;
+                color: #414042;
+            }
+            .grid-form .box .additional-bar .time input{
+                width: 38px;
+            }
+        
+        
+    
+    .form-login .error{ outline: 0 none; }
+    
+    .bar-authorization .form-login .box, 
+    .bar-authorization .form-login .box-indent{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bar-authorization .form-login .box-indent{
+        padding-left: 89px;
+    }
+        .bar-authorization .form-login .box label{
+            border-bottom-color: #fff;
+            margin-right: 72%;
+        }
+        .bar-authorization .form-login .box span{ width: 70%; }
+
+
+
+    div.form-login ul.box-indent{
+        list-style: none;
+        margin: 0;
+    }
+    div.form-login ul.box-indent li{
+        margin: 5px 0;
+        padding: 4px 0 4px 20px;
+        font: normal 12px/16px Arial, Helvetica, sans-serif;
+        list-style: none;
+    }
+    div.form-login .icons-exclamation, 
+    div.form-login .icons-question-mark{
+        background: url('../../img/snippets/other-services.png') no-repeat ;
+    }
+        div.form-login .icons-exclamation  { background-position: -135px   0; }
+        div.form-login .icons-question-mark{ background-position: -135px -50px; }
+
+
+
+.form-login dl.another-log-in{
+    display: block;
+    border: none;
+    margin: 15px 5px;
+    clear: right;
+}
+    .form-login dl.another-log-in dt, 
+    .form-login dl.another-log-in dd{
+        margin: 0;
+        padding: 0;
+    }
+    .form-login dl.another-log-in dt{
+        float: left;
+        padding-top: 10px;
+    }
+    .form-login dl.another-log-in dd{
+        display: block;
+        margin-left: 30%;
+        text-align: center;
+    }
+
+.another-log-in p.boxed{ margin: 0; }
+.another-log-in a{
+    display: inline-block;
+    font: normal 12px/15px Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #272727;
+}
+    .another-log-in a:hover span{
+        text-decoration: underline;
+    }
+.another-log-in a span{ display: block; }
+.another-log-in a img{
+    border: 0 none;
+    width: 41px;
+    height: 41px;
+    background: url('../../img/snippets/other-services.png') no-repeat ;
+    zoom: 1;
+}
+
+.another-log-in a.vkontakte{ float: left;  }
+.another-log-in a.twitter  { float: right; }
+
+.another-log-in a.vkontakte img{ background-position:   0    0; }
+.another-log-in a.facebook img { background-position: -45px  0; }
+.another-log-in a.twitter img  { background-position: -90px  0; }
+
+.another-log-in a.vkontakte:hover img{ background-position:   0   -50px; }
+.another-log-in a.facebook:hover img { background-position: -45px -50px; }
+.another-log-in a.twitter:hover img  { background-position: -90px -50px; }

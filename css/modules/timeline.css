@@ -1,0 +1,85 @@
+/** 
+ *   timeline.css [modules]
+ *   Version : 1.0.0
+ *   date modification __.__.2011
+ *   ----------------------------------
+ */
+
+.timeline{
+    
+    padding:  2px 6px;
+    margin:   25px 0;
+    
+    font-size: 12px;
+    
+    background: #edf0f4;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.30, #edf0f4),
+        color-stop(0.70, #f5f7f9)
+        );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        #edf0f4 30%,
+        #f5f7f9 70%
+        );
+    
+    border:        1px solid #bbbbbb;
+        border-top-color:    #cccccc;
+        border-bottom-color: #a0a0a0;
+    
+    border-radius:            12px;
+       -moz-border-radius:    12px;
+       -o-border-radius:      12px;
+       -webkit-border-radius: 12px;
+       -khtml-border-radius:  12px;
+    /*
+    box-shadow: 0 0 3px 0 #62bef0;
+        -moz-box-shadow:   0 0 3px 0 #62bef0;
+        -webkit-box-shadow:0 0 3px 0 #62bef0;
+        -o-box-shadow:     0 0 3px 0 #62bef0;
+    */
+    
+    }
+
+    .timeline td{
+        
+        width: 10%;
+        
+        border-right: 1px solid #e2e2e2;
+        border-left:  1px solid #fff;
+        text-align: center;
+        }
+        .timeline td:first-child{ border-left:  0 none; }
+        .timeline td:last-child { border-right: 0 none; }
+    
+    
+    
+    
+    .timeline-2{
+        display: inline-block;
+        width: 100%;
+        }
+    .timeline-2 li{
+        float:  left;
+        width:  100px;
+        height: 30px;
+        border: 1px solid #c2c2c2;
+        list-style: none;
+        
+        
+        
+        }
+        .timeline-2 li div{
+            position: absolute;
+            height:  30px;
+            background: #d2d2d2;
+            opacity: 0.5;
+            }
+
+
+
+
+
